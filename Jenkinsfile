@@ -1,3 +1,4 @@
+properties([parameters([choice(choices: ['Main', 'Test', 'Dev'], description: 'Select the branch to build.', name: 'Branch')])])
 pipeline {
     agent any 
     
